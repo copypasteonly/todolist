@@ -32,7 +32,7 @@ const TodoApp: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto mt-8">
-      <h1 className="text-2xl font-bold mb-4">to-do</h1>
+      <h1 className="text-2xl font-bold mb-4">todo</h1>
       <div className="flex space-x-2 mb-4">
         <Input
           type="text"
