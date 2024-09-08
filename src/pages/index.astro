@@ -1,13 +1,6 @@
 ---
-// Component Imports
 import '@/styles/globals.css'
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import TodoApp from '../components/TodoApp';
 ---
 
 <html lang="en">
@@ -16,22 +9,10 @@ const someProps = {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
 	</head>
 	<body>
 		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
+			<TodoApp client:load />
 		</main>
 	</body>
 </html>
